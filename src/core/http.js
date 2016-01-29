@@ -42,7 +42,7 @@ class Http {
      * @returns {Promise}
      */
     static post(host, data){
-        return Http.request({ method: 'POST', uri: host, body: data });
+        return Http.request({ method: 'POST', uri: host, form: data });
     }
 
     /**
@@ -52,7 +52,7 @@ class Http {
      * @returns {Promise}
      */
     static put(host, data){
-        return Http.request({ method: 'PUT', uri: host, body: data });
+        return Http.request({ method: 'PUT', uri: host, form: data });
     }
 
     /**
